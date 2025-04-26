@@ -1,0 +1,134 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Simple body styling */
+body {
+    background-color: lightblue;
+    padding: 20px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Main game container */
+.game-wrapper {
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* Title styling */
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Game information section */
+.game-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Score and timer container */
+.info-container {
+    margin-bottom: 20px;
+}
+
+/* Score and timer display */
+#score, #timer {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Start button */
+#startButton {
+    background-color: green;
+    color: white;
+}
+
+/* End button */
+#endButton {
+    background-color: red;
+    color: white;
+}
+
+/* Disabled button state */
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Game grid */
+.game-container {
+    background-color: lightgreen;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Individual holes */
+.hole {
+    background-color: #333;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+/* Cat styling */
+.happy-cat, .angry-cat {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Happy cat image */
+.happy-cat {
+    background-image: url("https://png.pngtree.com/png-vector/20230915/ourmid/pngtree-happy-cat-smiling-cat-png-image_10084801.png");
+}
+
+/* Angry cat image */
+.angry-cat {
+    background-image: url("https://crystalpng.com/wp-content/uploads/2025/03/angry-cat-png.png");
+}
+
+/* Instructions text */
+.instructions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* found this code on this site: https://www.w3schools.com/cssref/atrule_media.php */
+@media screen and (max-width: 600px) {
+    .game-wrapper {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
+
+
+
